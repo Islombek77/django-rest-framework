@@ -4,7 +4,7 @@ from profiles.api.views import AvatarUpdateView, ProfileViewSet, ProfileStatusVi
 
 router = DefaultRouter()
 router.register(r"profiles", ProfileViewSet)
-router.register(r"status", ProfileStatusViewSet)
+router.register(r"status", ProfileStatusViewSet, basename="status")
 
 
 # profile_list = ProfileViewSet.as_view({"get": "list"})
